@@ -220,3 +220,9 @@ ShipSense embeds delivery intent and status directly into Pull Requests, giving 
 - Acts as **living documentation** that evolves alongside the Pull Request.
 
 👉 The screenshot answers the developer question: *“What does this PR actually mean for delivery?”*
+
+
+---
+
+**Version:** v1.0  
+**Status:** Feature complete by design
