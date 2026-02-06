@@ -1,6 +1,8 @@
 # 📦 ShipSense
 ### Delivery intelligence inside GitHub — without Jira, spreadsheets, or manual updates.
 
+Built for engineering teams, product managers, and technical leaders who want clear delivery semantics without leaving GitHub.
+
 ## Overview
 
 ShipSense is a GitHub App that helps teams understand **what actually shipped** — directly inside GitHub, using the workflows they already use.
@@ -39,9 +41,8 @@ ShipSense fills that gap.
 
 ## Core Idea
 
-> **Not every PR that references an issue resolves it.
-Not every merge represents a completed delivery.**
-> 
+> **Not every PR that references an issue resolves it.  
+> Not every merge represents a completed delivery.**
 
 ShipSense makes delivery intent **explicit**, not implied.
 
@@ -104,24 +105,19 @@ No CI/CD integration required.
 
 ShipSense is intentionally opinionated:
 
-- **Single source of truth**
-    
-    One bot comment per PR. One per Issue.
+- **Single source of truth**  
+  One bot comment per PR. One per Issue.
     
 - **Human-owned narrative**
-    
     Stakeholder summaries are editable and preserved.
     
 - **Explicit over implicit**
-    
     Delivery intent is declared, not guessed.
     
 - **Minimal workflow disruption**
-    
     No CI changes. No extra tools. No forced processes.
     
 - **Enterprise-safe defaults**
-    
     Issues are never auto-closed by default.
     
 
@@ -176,8 +172,7 @@ This architecture mirrors how serious internal GitHub tooling is built.
 
 ## Why ShipSense Exists
 
-GitHub is excellent at helping teams **build software**,
-
+GitHub is excellent at helping teams **build software**,  
 but much weaker at helping teams **communicate delivery**.
 
 ShipSense adds that missing layer — without forcing teams out of GitHub.
@@ -192,8 +187,36 @@ ShipSense adds that missing layer — without forcing teams out of GitHub.
 
 This project exists to explore delivery intelligence, product design, and GitHub-native workflows.
 
----
 
+---
 ## Screenshots
 
-*(Add Issue + PR screenshots here when sharing publicly)*
+### Issue-level Delivery View (Stakeholder-focused)
+
+![Issue-level Delivery View](./images/issue-level-delivery-view.png)
+
+ShipSense provides a single, trusted delivery panel per issue, giving stakeholders clear visibility into progress without modifying the issue description or opening Pull Requests.
+
+- Provides a **single source of truth for delivery status** at the issue level.
+- Clearly shows **which Pull Requests contribute** to the issue and **how** they contribute (full resolution, partial delivery, or reference).
+- Makes **partial delivery explicit**, avoiding premature issue closure or misleading status.
+- Includes an editable **Stakeholder Summary** so non-technical users can understand progress in plain language.
+- Preserves the original issue description as **human-owned**, preventing automated overwrites.
+- Uses timestamps to ensure delivery information is **current, traceable, and auditable**.
+
+👉 The screenshot answers the core stakeholder question: *“What has shipped, what’s in progress, and what’s still pending?”*
+
+### PR-level Delivery Context (Developer-focused)
+
+![PR-level Delivery Context](./images/pr-level-delivery-context.png)
+
+ShipSense embeds delivery intent and status directly into Pull Requests, giving developers clear delivery context without interrupting code review.
+
+- Adds **delivery context directly to Pull Requests** without disrupting normal review workflows.
+- Uses explicit **intent labels** (`intent:resolves`, `intent:partial`, `intent:reference`) to define how the PR affects delivery.
+- Distinguishes **partial delivery** from full resolution, avoiding misleading “Fixes #issue” semantics.
+- Keeps stakeholder-facing information **collapsed by default**, minimizing noise for engineers.
+- Automatically updates delivery status as PR state or intent labels change — **no manual comments required**.
+- Acts as **living documentation** that evolves alongside the Pull Request.
+
+👉 The screenshot answers the developer question: *“What does this PR actually mean for delivery?”*
