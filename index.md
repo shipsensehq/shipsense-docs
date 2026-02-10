@@ -3,6 +3,8 @@
 
 Built for engineering teams, product managers, and technical leaders who want clear delivery semantics without leaving GitHub.
 
+[Privacy Policy](./privacy-policy.md) | [Contact](./contact.md)
+
 ## Overview
 
 ShipSense is a GitHub App that helps teams understand **what actually shipped** — directly inside GitHub, using the workflows they already use.
@@ -229,5 +231,3 @@ ShipSense embeds delivery intent and status directly into Pull Requests, giving 
 **Status:** Feature complete by design
 
 ---
-
-[Privacy Policy](./privacy-policy.md)
