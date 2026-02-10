@@ -224,5 +224,10 @@ ShipSense embeds delivery intent and status directly into Pull Requests, giving 
 
 ---
 
-**Version:** v1.0  
+**Version:** v1.0
+**Date:** February 2026
 **Status:** Feature complete by design
+
+---
+
+[Privacy Policy](./privacy-policy.md)
