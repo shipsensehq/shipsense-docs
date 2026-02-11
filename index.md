@@ -3,7 +3,7 @@
 
 Built for engineering teams, product managers, and technical leaders who want clear delivery semantics without leaving GitHub.
 
-[Privacy Policy](./privacy-policy.md) | [Contact](./contact.md)
+[Privacy Policy](./privacy-policy.md) | [Contact](./contact.md) | [Terms of Service ](./terms-of-service.md)
 
 ## Overview
 
